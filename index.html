@@ -1,0 +1,500 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Aswini Pindi | Full Stack Java Web Developer</title>
+  <meta name="description" content="Portfolio website of Aswini Pindi, full stack Java web developer. Projects, skills, and contact info available.">
+  <meta name="keywords" content="Aswini Pindi, Full Stack Java, Web Developer, Portfolio">
+
+    <style>
+         nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #f9c5d1, #9796f0);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;      
+    gap: 60px;
+    padding: 15px 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 10px;     
+         }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease-in-out;
+        }
+         nav a:hover {
+            color: #222;
+            background-color: #fff;
+            padding: 5px 15px;
+            border-radius: 25px;
+         }
+         section {
+    padding: 60px 20px;
+    min-height: 100vh;
+    opacity: 1;               
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+                section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #Education {
+            background: linear-gradient(180deg, #f5f5dc, #fff8dc);
+        }
+        #Projects {
+            background: linear-gradient(180deg, #e0f7fa, #b2ebf2);
+        }
+
+        #Skills {
+            background: linear-gradient(180deg, #fffaf0, #fafad2);
+        }
+
+        #Contact {
+            background: linear-gradient(180deg, #ffe4e1, #fff0f5);
+        }
+/* 🌸 New Home Page Layout */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9c5d1, #9796f0);
+  padding: 60px;
+  color: white;
+  text-align: left;
+}
+
+.home-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-left img {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  animation: floatPic 4s ease-in-out infinite;
+}
+
+@keyframes floatPic {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.home-right {
+  flex: 1;
+  padding: 40px;
+}
+
+.home-right h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.home-right h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.highlight {
+  color: #efc67a;
+}
+
+.home-right p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.home-right button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #4b0082;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-right button:hover {
+  background: #ffe5b4;
+  color: #222;
+}
+
+/* ✨ Typing Text Animation */
+#typing-text {
+  border-right: 3px solid white;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+  color: red;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+        h2, h3 {
+            color: #2f4f4f;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            color: #444;
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px;
+        }
+        ul li {
+            padding: 8px 0;
+            font-size: 1.1em;
+        }
+
+       
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 2px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ffe5b4;
+        }
+
+        td {
+            background-color: #fff;
+        }
+
+        
+        form {
+            margin-top: 20px;
+            background-color: #fff;
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        input[type="text"], input[type="email"] {
+            padding: 8px;
+            margin: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 80%;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            animation: float 3s ease-in-out infinite;
+            margin-bottom: 15px;
+        }
+/* 🌟 Modern Floating Skill Cards 🌟 */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.skill-card {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg, #f9c5d1, #9796f0);
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  animation: floatSkill 4s ease-in-out infinite;
+}
+
+/* ✨ Hover Effect */
+.skill-card:hover {
+  transform: scale(1.1) rotateY(10deg) rotateX(10deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 🕊 Floating Animation */
+@keyframes floatSkill {
+  0%, 100% { transform: translateY(0px) rotateY(0deg); }
+  50% { transform: translateY(-12px) rotateY(6deg); }
+}
+
+/* 🖼 Skill Logo */
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+/* 📝 Skill Name */
+.skill-card span {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+    body {
+        text-align: center;
+    }
+    li {
+        text-decoration: none;
+        list-style-type: none;
+    }
+</style>
+</head>
+
+<body>
+    
+    <nav>
+    
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Projects"> Projects</a></li>
+        <li><a href="#Skills">  Skills</a></li>
+        <li><a href="#Contact">  Contact</a></li>
+</nav>
+<section id="home">
+  <div class="home-container">
+    <div class="home-left">
+      <img src="image.png" alt="Aswini Picture">
+    </div>
+
+    <div class="home-right">
+      <h1>Hi, I'm <span class="highlight">Aswini Pindi</span></h1><br><br>
+      <h2>I'm a <span id="typing-text"></span></h2>
+      <p>A passionate full stack Java web developer who loves learning and creating beautiful projects.</p>
+      <button onclick="scrollToAbout()">Discover More</button>
+    </div>
+  </div>
+</section>
+
+    <section id="Education" >
+        <h2>Educational Qualifications</h2>
+         <table border="4" align="center" width="80%" bgcolor="#ffe5b4" cellpadding="5" cellspacing="6" height="80%">
+        <tr>
+            <th>S.NO</th>
+            <th>Education</th>
+            <th>Institution</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>SSC</td>
+            <td>S.N.S.P.Z.P.H.School</td>
+            <td>99%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Intermediate</td>
+            <td>Vidyanidhi Junoir College</td>
+            <td>93%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>B.Tech</td>
+            <td>Bonam Venkata Chalamayya Engineering College</td>
+            <td>86%%</td>
+        </tr>
+    </table>
+    </section>
+    <section id="Projects">
+        <h2>My Projects</h2>
+        <table border="2" align="center" width="60%" bgcolor="#FF9899" cellpadding="5" cellspacing="6" height="70%">
+            <tr>
+                <th>S.NO</th>
+                <th>Projects</th>
+                <th>Description</th>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>Portofolio Website</td>
+            <td>
+                I have built a portfolio website by using HTMl,CSS & JS
+            </td>            
+           </tr>
+           <tr>
+            <td>2</td>
+            <td>Simple Calculator</td>
+            <td>I have built a Simple Calculator which will perform some basic arithmetic operations</td>
+           </tr>
+           
+        </table>
+    </section>
+<section id="Skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+      <span>HTML</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+      <span>CSS</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+      <span>Java</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+      <span>React</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
+      <span>Spring Boot</span>
+    </div>
+  </div>
+</section>
+
+    <section id="Contact">
+        <h2>Contact me</h1>
+        <p>Feel free to get in touch with me from the details below:</p>
+        <form action="" >
+            <label for="name">
+                Name:
+            </label>
+            <input type="text" value="Aswini Pindi" >
+            <br>
+            <label for="email" >
+                Email:
+            </label>
+            <input type="email" value="aswinipindi@gmail.com" >
+            
+            <br>
+            <b>Gender:</b>
+            <input type="radio" name="female" id="female" checked >
+            <label for="female">Female</label>
+            <br>
+            <b>My interests:</b>
+            <input type="checkbox" name="coding" id="coding" checked>
+            <label for="coding">Coding</label>
+            <input type="checkbox" name="reading" id="reading" checked>
+            <label for="rading">Reading</label><br><br>
+            
+            <br>
+        </form>
+        <footer>
+  <div class="footer-container">
+    <h3>For more details💌</h3>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/aswini-pindi" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="mailto:aswinipindi@gmail.com">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+    </div>
+    <p>© 2025 Aswini Pindi | All Rights Reserved</p>
+  </div>
+</footer>
+    </section>
+
+    <!-- ===== Footer Section ===== -->
+
+
+<script>
+
+function scrollToAbout() {
+  document.getElementById('Education').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Typing animation words
+const roles = ["Full Stack Java Web Developer", "Passionate coder", " Curious Learner","Problem Solver"];
+let roleIndex = 0;
+let charIndex = 0;
+const typingSpeed = 120;
+const eraseSpeed = 60;
+const delayBetweenWords = 1000;
+const typingText = document.getElementById("typing-text");
+
+function typeEffect() {
+  if (charIndex < roles[roleIndex].length) {
+    typingText.textContent += roles[roleIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeEffect, typingSpeed);
+  } else {
+    setTimeout(eraseEffect, delayBetweenWords);
+  }
+}
+
+function eraseEffect() {
+  if (charIndex > 0) {
+    typingText.textContent = roles[roleIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseEffect, eraseSpeed);
+  } else {
+    roleIndex = (roleIndex + 1) % roles.length;
+    setTimeout(typeEffect, typingSpeed);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(typeEffect, 1000);
+});
+
+
+</script>
+
+
+    </body>
+
+</html>
